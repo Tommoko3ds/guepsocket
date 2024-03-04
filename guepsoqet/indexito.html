@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="estilos.css" rel="stylesheet">
+    <!-- Bootstrap CSS v5.2.1 -->
+
+
+    <style>
+        /* Estilo para controlar el tamaño máximo de los elementos canvas */
+        .canvas-container canvas {
+            max-width: 500px;
+            max-height: 540px;
+            /* Asegura que el canvas no sea más ancho que el valor especificado */
+            height: 30px;
+            /* Mantiene la relación de aspecto del canvas */
+        }
+
+        /* Estilo para las tarjetas para asegurar un margen interno */
+        .card {
+            margin: 150px ;
+            padding-left: 30px;
+            /* Añade un poco de margen arriba y abajo para separación */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-body canvas-container">
+            <h4 class="card-title text-xl font-semibold">Sensor Ultrasonico</h4>
+            <canvas id="sensorUltrasonico"></canvas>
+        </div>
+    </div>
+    
+
+    <div id="main-content ">
+        <div class="the-container">
+
+            <input type="checkbox" id="toggleBtn" />
+            <label for="toggleBtn"></label>
+
+            <div class="day-night-cont">
+                <span class="the-sun"></span>
+                <div class="the-moon"><span class="moon-inside"></span></div>
+            </div>
+
+            <div class="switch">
+                <div class="button">
+                    <div class="b-inside"></div>
+                </div>
+            </div>
+
+            <div class="c-window">
+
+                <span class="the-sun"></span>
+                <span class="the-moon"></span>
+
+                <div class="the-cat">
+                    <div class="cat-face">
+                        <section class="eyes left"><span class="pupil"></span></section>
+                        <section class="eyes right"><span class="pupil"></span></section>
+
+                        <span class="nose"></span>
+                        <div class="white-part"><span class="mouth"></span></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+<div>
+
+
+   
+            <div class=" ">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title text-center text-xl font-semibold">Leds</h4>
+                        <div class="flex flex-col items-center">
+                            <div class=" text-center">
+                                <img src="img/default.svg" style="width: 100px; height: 100px;" alt="LED Off"
+                                    class="img-fluid" id="led0">
+                            </div>
+                          
+                        </div>
+                    </div>
+        </div>
+    
+</div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
